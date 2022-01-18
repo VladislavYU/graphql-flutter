@@ -424,7 +424,7 @@ class QueryManager {
         if (_cachedDataHasChangedFor(query, cachedData)) {
           query.addResult(
             mapFetchResultToQueryResult(
-              Response(data: cachedData),
+              Response(data: cachedData, response: {}),
               query.options,
               source: QueryResultSource.cache,
             ),
